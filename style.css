@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0b1220, #0f1b2d, #111f3a);
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* LOGO */
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #22c55e;
+}
+
+.logo span {
+    color: #e2e8f0;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: #e2e8f0;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #22c55e;
+}
+
+/* TELEGRAM BUTTON */
+.telegram {
+    background: #22c55e;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+}
+
+/* TEXT */
+.hero h1 {
+    font-size: 50px;
+}
+
+.hero p {
+    color: #cbd5e1;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* BUTTONS */
+.btn, .btn2 {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.btn {
+    background: #22c55e;
+    color: black;
+}
+
+.btn2 {
+    border: 1px solid #22c55e;
+    color: white;
+}
+
+/* STATS */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 40px 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.06);
+    padding: 20px;
+    border-radius: 14px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255,255,255,0.05);
+    margin-top: 30px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}
